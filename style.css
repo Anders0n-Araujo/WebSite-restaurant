@@ -24,6 +24,10 @@ html{
   scroll-behavior: smooth; 
 }
 
+section{
+  padding: 2rem 9%;
+}
+
 header{
   position: fixed;
   top: 0;
@@ -141,6 +145,14 @@ header .icons #menu-bars{
   right: 3rem;
   font-size: 5rem;
 }
+
+.home .home-slider .slide{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+} 
 
 
 
