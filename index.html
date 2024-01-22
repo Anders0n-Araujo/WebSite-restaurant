@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSite Responsivo de Restaurante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,47 +36,47 @@
     </header>
 
     <form action="" id="search-form">
-        <input type="search" placeholder="search here ..." name="" id="search-box">
+        <input type="search" placeholder="pesquise aqui ..." name="" id="search-box">
         <label for="search-box" class="fas fa-search"></label>
         <i class="fas fa-times" id="close"></i>
     </form> 
 
     <section class="home" id="home">
 
-        <div class="home-slider">
+        <div class="swiper home-slider">
 
-            <div class="wrapper">
+            <div class="swiper-wrapper wrapper">
 
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>nossas receitas especiais</span>
                         <h3>spaghetti a Bolonhesa</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi dicta unde.</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Peça Agora</a>
                     </div>
                     <div class="image">
                         <img src="Images\spaghetti-with-bolognese-sauce-isolated-white-background.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>nossas receitas especiais</span>
-                        <h3>Sandwich cheesegreen com cebola caramelizada</h3>
+                        <h3>Sandwich cheesegreen</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi dicta unde.</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Peça Agora</a>
                     </div>
                     <div class="image">
                         <img src="Images\philly-cheesesteak-sandwich-with-beef-cheesegreen-pepers-caramelized-onion.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>nossas receitas especiais</span>
-                        <h3>Pizza de Pepperoni com tomates e cogumelos</h3>
+                        <h3>Pizza de Pepperoni</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi dicta unde.</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">Peça Agora</a>
                     </div>
                     <div class="image">
                         <img src="Images\delicious-italian-pizza-with-tomato-olives-pepperoni-mushrooms-top-view-isolated-white-background-still-life-copy-space.jpg" alt="">
@@ -84,14 +85,17 @@
 
             </div>
 
+            <div class="swiper-pagination"></div>
+
         </div>
 
     </section>
 
 
 
-
-
+    <!-- Script de Swiper pelo cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     <script src="script.js"></script>
 </body>
 
