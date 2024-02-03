@@ -304,6 +304,38 @@ header .icons #menu-bars{
   font-size: 2.5rem;
 }
 
+.about .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about .row .image{
+  flex: 1 1 45rem;
+}
+
+.about .row .image img{
+  width: 100%;
+}
+
+.about .row .content{
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+  color: var(--black);
+  font-size: 4rem;
+  padding: .5rem 0;
+}
+
+.about .row .content p{
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  line-height: 2;
+}
+
 /* media queries (responsividade)*/
 @media (max-width:991px){
   
