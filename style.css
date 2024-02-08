@@ -336,6 +336,37 @@ header .icons #menu-bars{
   line-height: 2;
 }
 
+.about .row .content .icons-container{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+  background: #eee;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 1.5rem 1rem;
+} 
+
+.about .row .content .icons-container .icons i{
+  font-size: 2.5rem;
+  color: var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+
 /* media queries (responsividade)*/
 @media (max-width:991px){
   
