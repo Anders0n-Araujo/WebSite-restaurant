@@ -445,6 +445,22 @@ header .icons #menu-bars{
   font-size: 2.5rem;
 }
 
+.review .slide{
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: .1rem solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  position: relative;
+}
+
+.review .slide .fa-quote-right{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+
 
 /* media queries (responsividade)*/
 @media (max-width:991px){
