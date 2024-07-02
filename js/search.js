@@ -48,6 +48,23 @@ document.querySelector('#close').onclick = () =>{
 const listaContainer = document.querySelector('.box-container');
 const search = document.querySelector('#search-box');
 
+function searchInKeyup(event){
+    const searched = event.target.value;
+
+    const receitasFound = receitasFilterInSearch(searched);
+    console.log(receitasFound);
+   
+    receitasFound.length > 0 ? render(receitasFound) : listaContainer.innerHTML = `<h1> Nenhum Produto Encontrado </h1>`
+}
+
+function receitasFilterInSearch(searched){
+    return receitas.filter(receitas =>{
+        return receitas.titulo.toLowerCase().includes(searched.toLowerCase());
+    });
+}
+
+search.addEventListener('keyup',_.debounce(searchInKeyup,400));
+
 function render(receitas){
 
     let lista = '';
