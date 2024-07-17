@@ -1,5 +1,6 @@
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
+let searchIcon = document.querySelector('.icons');
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
@@ -25,6 +26,12 @@ window.onscroll = () =>{
           links.classList.remove('active');
           links = query;
           links.classList.add('active');
+          if(id === "receitas" ||id === "menu" ){
+            searchIcon.classList.add('active')
+          }
+          else{
+            searchIcon.classList.remove('active')
+          }
         });
       } 
     });

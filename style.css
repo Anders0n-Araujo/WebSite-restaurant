@@ -126,6 +126,14 @@ header .icons #menu-bars{
   display: none;
 }
 
+header .icons #search{
+  display: none;
+}
+
+header .icons.active #search{
+  display: inline-block;
+}
+
 #search-form{
   position: fixed;
   top: -110%;
